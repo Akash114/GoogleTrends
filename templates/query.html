@@ -1,0 +1,13 @@
+<h3>Related Queries</h3>
+<table>
+    <tr>
+    <th>Title</th>
+    <th>Rising Value</th>
+</tr>
+{% for query in queries %}
+    <tr>
+        <td>{{ query.name }}</td>
+        <td>{{ query.values }}</td>
+    </tr>
+{% endfor %}
+</table>

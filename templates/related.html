@@ -1,0 +1,15 @@
+<h3>Related Topics</h3>
+<table>
+    <tr>
+    <th>Title</th>
+    <th>Type</th>
+    <th>Rising Value</th>
+</tr>
+{% for related in relateds %}
+    <tr>
+        <td>{{ related.title }}</td>
+        <td>{{ related.t_type }}</td>
+        <td>{{ related.value }}</td>
+    </tr>
+{% endfor %}
+</table>
